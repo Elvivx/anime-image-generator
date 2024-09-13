@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  transition: all 1s ease-in-out;
+}
+
+body {
+  font-family: "Sofadi One", system-ui;
+  font-style: normal;
+  background: rgb(0, 38, 63);
+}
+
+.main {
+  text-align: center;
+  color: aliceblue;
+  font-weight: 600;
+  transition: all 1s;
+}
+.main .hide {
+  transform: scale(0);
+}
+.main .hide-options {
+  display: none;
+}
+.main .input-options {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  gap: 15px;
+}
+.main .input-options .types,
+.main .input-options .style {
+  display: flex;
+  flex-direction: column;
+}
+.main .input-options label {
+  font-size: 22px;
+}
+.main .input-options select {
+  font-size: 17px;
+  margin-top: 10px;
+  padding: 5px;
+  text-transform: capitalize;
+  border: 0;
+  outline: 0;
+  color: aliceblue;
+  background: rgb(78, 183, 253);
+  font-weight: 600;
+  border-radius: 3px;
+  font-family: inherit;
+}
+.main .input-options select option {
+  font-weight: 600;
+  padding: 5px;
+}
+.main .main {
+  width: 100%;
+  max-height: 600px;
+  margin-top: 20px;
+  position: relative;
+}
+.main .main .view {
+  border: 2px solid aliceblue;
+  border-radius: 7px;
+  box-shadow: 0px 0px 11px 0px aliceblue;
+  max-width: 500px;
+  max-height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: all 1s ease-in-out;
+}
+.main .main .warn {
+  width: -moz-fit-content;
+  width: fit-content;
+  background: rgb(14, 80, 141);
+  padding: 20px;
+  border-radius: 7px;
+  text-transform: capitalize;
+  margin: auto;
+  transition: all 1s ease-in-out;
+}
+.main .main .warn h3 {
+  margin: 0;
+}
+.main .generate {
+  font-family: inherit;
+  font-size: 19px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-top: 20px;
+  outline: 0;
+  border: 0;
+  font-weight: 600;
+  color: aliceblue;
+  background: rgb(78, 183, 253);
+  box-shadow: 0px 0px 5px 0px aliceblue;
+}
+.main .icon {
+  margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+  .main {
+    width: 100%;
+  }
+  .view {
+    max-width: 100dvw;
+  }
+}/*# sourceMappingURL=styles.css.map */
